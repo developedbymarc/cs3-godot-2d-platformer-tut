@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://r43rlodqkgow"]
+
+[ext_resource type="Texture2D" uid="uid://g0nni6w6vk1b" path="res://Assets/Entities/Checkpoints/Start/Start (Idle).png" id="1_yaryc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oysuh"]
+size = Vector2(34, 8)
+
+[node name="StartCheckpoint" type="StaticBody2D" unique_id=254391548]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1927362288]
+position = Vector2(0, -32)
+texture = ExtResource("1_yaryc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=713096955]
+position = Vector2(11, -4)
+shape = SubResource("RectangleShape2D_oysuh")

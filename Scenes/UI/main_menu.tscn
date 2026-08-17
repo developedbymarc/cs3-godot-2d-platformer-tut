@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://0wxfl8qmmwxm"]
+
+[ext_resource type="Texture2D" uid="uid://nl8gyfm1mac3" path="res://Assets/Menu/Buttons/Close.png" id="1_i2xx2"]
+[ext_resource type="Theme" uid="uid://ga6xviush6e1" path="res://Themes/default.tres" id="1_o14dv"]
+[ext_resource type="Texture2D" uid="uid://uxiyr66yw2u3" path="res://Assets/Menu/Buttons/Play.png" id="2_o14dv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_odcsp"]
+font_size = 72
+font_color = Color(0, 0, 0, 1)
+outline_size = 16
+outline_color = Color(0.28235295, 0.5803922, 0.69411767, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_36iwh"]
+font_size = 128
+font_color = Color(0, 0, 0, 1)
+outline_size = 16
+outline_color = Color(0.28235295, 0.5803922, 0.69411767, 1)
+
+[sub_resource type="Theme" id="Theme_o6k1f"]
+
+[node name="MainMenu" type="VBoxContainer" unique_id=462025095]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -281.0
+offset_right = 512.0
+offset_bottom = 281.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_o14dv")
+theme_override_constants/separation = 48
+alignment = 1
+
+[node name="HeaderText" type="Label" parent="." unique_id=863629588]
+layout_mode = 2
+theme = ExtResource("1_o14dv")
+text = "CS3
+2d Game Dev
+workshop"
+label_settings = SubResource("LabelSettings_odcsp")
+horizontal_alignment = 1
+
+[node name="GameTitle" type="Label" parent="." unique_id=1927467568]
+layout_mode = 2
+theme = ExtResource("1_o14dv")
+text = "PIXEL FROGG"
+label_settings = SubResource("LabelSettings_36iwh")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=871005548]
+layout_mode = 2
+theme = ExtResource("1_o14dv")
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1951781701]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_o14dv")
+theme_override_font_sizes/font_size = 48
+text = "exit"
+icon = ExtResource("1_i2xx2")
+icon_alignment = 2
+expand_icon = true
+
+[node name="PlayButton" type="Button" parent="HBoxContainer" unique_id=1384485389]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_o6k1f")
+theme_override_font_sizes/font_size = 48
+text = "Play"
+icon = ExtResource("2_o14dv")
+icon_alignment = 2
+expand_icon = true

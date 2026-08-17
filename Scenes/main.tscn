@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://3dpsj265cfwc"]
 
+[ext_resource type="Script" uid="uid://cugpf4awfsukr" path="res://Scripts/ui_manager.gd" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://ecy3wtpsl6m" path="res://Scenes/UI/game_over_menu.tscn" id="2_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://0wxfl8qmmwxm" path="res://Scenes/UI/main_menu.tscn" id="3_kry3j"]
+[ext_resource type="PackedScene" uid="uid://6yv455d4mgh3" path="res://Scenes/UI/win_menu.tscn" id="4_21xkr"]
+
 [node name="Main" type="Node" unique_id=1173247731]
+
+[node name="UIManager" type="Node" parent="." unique_id=682791471]
+script = ExtResource("1_jjgbg")
+menus = Dictionary[int, PackedScene]({
+0: ExtResource("3_kry3j"),
+1: ExtResource("4_21xkr"),
+2: ExtResource("2_jjvhh")
+})
+
+[node name="LevelManager" type="Node" parent="." unique_id=1575145843]

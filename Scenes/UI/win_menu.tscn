@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://6yv455d4mgh3"]
+
+[node name="WinMenu" type="Control" unique_id=530710765]
+layout_mode = 3
+anchors_preset = 0
